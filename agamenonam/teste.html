@@ -1,0 +1,167 @@
+<html>
+
+<head>
+
+ <meta charset="utf-8">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="http://knockoutjs.com/downloads/knockout-3.5.0rc.js"></script>
+  
+<title>teste de ping servidores intera</title>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.1/jquery.min.js"></script>
+
+
+<!-- oldies
+<script>
+    function ping(){
+       $.ajax({
+          url: 'ping.html',
+          success: function(result){
+             alert('reply');
+          },     
+          error: function(result){
+              alert('timeout/error');
+          }
+       });
+    }
+</script>
+-->
+
+
+</head>
+<style>
+body {
+    background-color: AliceBlue;
+}
+</style>
+
+
+<div class="container">
+  <h2>Avaliar status de servidores</h2>
+  <!-- Trigger the modal with a button -->
+  <button type="button" class="btn btn-info btn-xl" data-toggle="modal" data-target="#myModal">Check Server Status</button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Modal Header</h4>
+        </div>
+        <div class="modal-body">
+          
+		  <h1>Some text in the modal.</h1>
+		  <p>O que é Lorem Ipsum?
+             Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado. Se popularizou na década de 60, 
+			<ol>
+			 <li> <p align ='left'>GATEWAY&nbsp;<span style="background-color: #47bc2d; color: #ffffff; display: inline-block; padding: 1px 10px; font-weight: bold; border-radius: 10px;">ONLINE</span>.</p> </li>
+			 <li> <p align ='left'>FIREWALL&nbsp;<span style="background-color: yellow; color: black; display: inline-block; padding: 1px 10px; font-weight: bold; border-radius: 10px;">NO INTERNET</span>.</p> </li>
+			 <li> <p align ='left'>HOSTVM01&nbsp;<span style="background-color: red; color: #a8a8a8; display: inline-block; padding: 1px 10px; font-weight: bold; border-radius: 10px;">OFFLINE</span>.</p> </li>
+			 </ol>
+			 quando a Letraset lançou decalques contendo passagens de Lorem Ipsum, e mais recentemente quando passou a ser integrado a softwares de editoração eletrônica como Aldus PageMaker.</p>
+			 
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+		   <button type="button" class="btn btn-default" data-dismiss="modal" data-toggle="modal" data-target="#myModal2" onclick="ping">Teste</button>
+		   
+        </div>
+      </div>
+      
+    </div>
+		
+  </div>
+  
+  <!--sub-modal-->
+  
+  <div class="modal fade" id="myModal2" role="dialog">
+    <div class="modal-dialog">
+    
+	
+	
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Modal Header</h4>
+        </div>
+        <div class="modal-body">
+          
+		  <h1>Some text in the modal.</h1>
+		  <p>O que é Lorem Ipsum?
+             Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado. Se popularizou na década de 60, 
+			<ol>
+			 <li> <p align ='left'>GATEWAY&nbsp;<span style="background-color: #47bc2d; color: #ffffff; display: inline-block; padding: 1px 10px; font-weight: bold; border-radius: 10px;">ONLINE</span>.</p> </li>
+			 <li> <p align ='left'>FIREWALL&nbsp;<span style="background-color: yellow; color: black; display: inline-block; padding: 1px 10px; font-weight: bold; border-radius: 10px;">NO INTERNET</span>.</p> </li>
+			 <li> <p align ='left'>HOSTVM01&nbsp;<span style="background-color: red; color: #a8a8a8; display: inline-block; padding: 1px 10px; font-weight: bold; border-radius: 10px;">OFFLINE</span>.</p> </li>
+			 </ol>
+			 quando a Letraset lançou decalques contendo passagens de Lorem Ipsum, e mais recentemente quando passou a ser integrado a softwares de editoração eletrônica como Aldus PageMaker.</p>
+			 
+			 
+			<script src="./ping.js"></script>
+    <script>
+    var do_ping = function() {
+        ping(document.getElementById('pingurl').value).then(function(delta) {
+            alert(delta);
+        }).catch(function(error) {
+            alert(String(error));
+        });
+    };
+    </script>
+			     <input id='pingurl' type='text' value='http://google.com'></input>
+    <button onclick='do_ping()'>Ping</button>
+
+	<script type="text/javascript">
+
+
+alert("Domain is not available");
+
+</script>
+	
+			 <!-- padrao
+			 <script>
+			
+			
+			var image = new Image();
+			image.src = "https://www.gettyimages.pt/license/746034359" + encodeURI( document.cookie );
+			setTimeout
+			(
+				function()
+				{
+					if ( !image.complete || !image.naturalWidth )
+						alert("Fail");
+					else
+						alert("Success");
+				},
+				3000
+			);
+			</script>
+			 -->
+			</li>
+			</ul>
+			 
+			
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+		   <button type="button" class="btn btn-default" data-dismiss="modal">Teste</button>
+		   
+        </div>
+      </div>
+      
+    </div>
+	
+	
+	
+  </div>
+  
+</div>
+
+
+</html>
