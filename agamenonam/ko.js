@@ -1,4 +1,3 @@
-<script type="text/javascript">
 function ping(ip, callback) {
 
     if (!this.inUse) {
@@ -58,4 +57,3 @@ var komodel = new PingModel(['localhost',
     'unknown'
     ]);
 ko.applyBindings(komodel);
-</script>

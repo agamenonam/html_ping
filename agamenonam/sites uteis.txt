@@ -1,0 +1,7 @@
+sites para checar codigos para ping em html:
+
+https://jsfiddle.net/GSSCD/203/ - script JS knocout funcional no site, porém sem sucesso via notepad++ (possivel problema de carregamento de include do .js)
+
+https://daneden.github.io/animate.css/ - css para animação de textos (muito bom)
+
+https://cdnjs.com - links para carregar libs de desenvolvimento, basta digitar o tipo de script que deseja que indica um cloudfare para carregar
