@@ -1,0 +1,9 @@
+.responded {
+    background-color: #47bc2d; color: #ffffff; display: inline-block; padding: 1px 5px; font-weight: bold; border-radius: 7px;
+}
+.checking,.unchecked {
+    background-color: yellow; color: black; display: inline-block; padding: 1px 5px; font-weight: bold; border-radius: 7px;
+}
+.timeout {
+    background-color: red; color: #a8a8a8; display: inline-block; padding: 1px 5px; font-weight: bold; border-radius: 7px;
+}

@@ -1,0 +1,402 @@
+<html>
+<link rel="shortcut icon" type="image/png" href="images\favicon.png"/>
+<head>
+<title>Acessos</title>
+  <meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="lay.css">
+    <link rel="stylesheet" href="bootstrap-4.0.0-dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="index.css" />
+	<script src="http://knockoutjs.com/downloads/knockout-3.5.0rc.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	
+	<style>
+		
+	.testa_acesso 
+	{
+		background-color: none;
+		height: 20px;
+		position: absolute;
+		top: 8;
+		right: 0;
+		width: 140px;
+		col-lg-2 col-md-2 col-sm-12 col-xs-12;
+	}
+
+	
+	.div_cab
+	{
+		height: 200px;
+		position: relative;
+		top: 8;
+		left: 12%;
+		right: 0;
+		width: 80%;
+		col-lg-10 col-md-10 col-sm-12 col-xs-12;
+		background-color: none;
+	}
+
+	</style>
+	
+</head>
+
+<body class="bg-gray">
+
+	<!-- CABEÇALHO INICIO -->
+
+	<div class="div_cab">
+    <h1 style="color: #5e9ca0;" align='center'>Intera dashboard <span style="color: #2b2301;">de Sites</span> importantes</h1>
+    <h2 style="color: #2e6c80;" align='center'>Dicas de como usar:</h2>
+    <p align='center'>Clique em um dos icones abaixo para ser direcionado para o site que desejas.&nbsp;</p>
+    <p align='center'>Verifique que sites com dom&iacute;nio WD ou HGST(hitachi) precisam de acesso via&nbsp;<span style="background-color: #2b2301; color: #fff; display: inline-block; padding: 1px 10px; font-weight: bold; border-radius:10px;">VPN</span>.</p>
+	</div>
+	
+	<!-- CABEÇALHO FIM -->
+	
+	
+	<!-- BOTÃO DE TESTE DE INTERNET INICIO -->
+	
+	<div class="testa_acesso">
+	<button type="button" class="btn btn-info btn-xl" data-toggle="modal" data-target="#myModal" onclick="arroz();">Check Internet</button>
+	</div>
+	
+	<!-- BOTÃO DE TESTE DE INTERNET FIM -->
+	
+	<!-- alerta em estilo
+	
+	<div class="alert alert-warning alert-dismissible" role="alert">
+		<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		<strong>Aviso!</strong> Em breve é aniversário de Jeske, Cobrem ele pra trazer o bolo e o Refri.
+	</div>
+	
+	-->
+	
+    <div class="container">
+
+        <span style="color:black; font-weight: bold; font-size: x-large">Links Locais</span>
+
+        <div class="row">
+                
+            <div class="col-lg-2 col-md-3 col-sm-5 col-xm-5 col-xm-6 mt-2 mr-2 div-branco" 
+                onclick="window.open('https://access.hgst.com/adfs/ls/?client-request-id=441d2cc4-1511-4715-8123-fde87a397be0&wa=wsignin1.0&wtrealm=urn%3afederation%3aMicrosoftOnline&wctx=LoginOptions%3D3%26estsredirect%3d2%26estsrequest%3drQIIAdNiNtQztFIxgAAjXRCpa5CWZqibnApiIYEiIS6BIzqyLoKiou6Nyn9fVFlWP1jFqJRRUlJQbKWvn19akpOfn62Xn5aWmZxqbGaql5yfq59fnqi_g5HxAiPjKiZzM6CoibmZkZGBmZmZqYWJmYGecUpqkrFRoqGuoYGRga6JubmJbmKaobmuWbJlqnFqmkGyear5LSZ-f8fSkgwjEJFflFmV-omJMy2_KDe-IL-4ZBZzvEtyaYVbpGO5s6NTUH6xZYWvY2Bgild5ZHB4WYFujo-FmZmJY7lXYXiYc7pLUq63R2mWe0hukFGee6lxZYWzcbJ7VVRmYF5YhLmPr6lRUYZzZIlPuYWXT1lYiW6ZYYXFKmaiwmcTMxvQx7n5eaeY2fILUvMyUx4xSxSnluqVFpcmFmXm6yUWlmY6lKckgwLmAgvjKxYeA2YrDg4uAQYJBgWGHyyMi1iBQWw4u6n3tLKy55R1f4Qmd_ownGLVL9C28A0w8w5xjTII9k9JLDfQD7bMKAgwyc10NTbyMyz0y_DI8gowLIz0jbQ1sDKcwMY4gY3tBRvjBzaGXZxERNAtLhEjA0MLXaD_jAwUjIysjEysTE2iAA2&cbcxt=&username=seu.usuario.aqui%40wdc.com&mkt=&lc=','_blank');">
+               <div class="div-interna text-center">                
+                   <img src="images/wd.jpg" style="width:140px"/>
+                   <span style="color:black; font-weight: bold">Webmail</span>
+               </div>
+           </div>
+		   
+		   
+           <div class="col-lg-2 col-md-3 col-sm-5 col-xm-5 col-xm-6 mt-2 mr-2 div-branco" 
+                onclick="window.open('https://webmail-seguro.com.br/intera.org.br/','_blank');">
+               <div class="div-interna text-center">                
+                   <img src="images/locaweb.png" style="width:100px"/>
+                   <span style="color:black; font-weight: bold">Webmail</span>
+               </div>
+           </div>
+
+           <div class="col-lg-2 col-md-3 col-sm-5 col-xm-5 col-xm-6 mt-2 mr-2 div-branco" 
+                onclick="window.open('https://painel-email.locaweb.com.br/','_blank');">
+               <div class="div-interna text-center">                
+                   <img src="images/locaweb.png" style="width:100px"/>
+                   <span style="color:black; font-weight: bold">Painel Webmail</span>
+               </div>
+           </div>
+
+           <div class="col-lg-2 col-md-3 col-sm-5 col-xm-5 col-xm-6 mt-2 mr-2 div-branco" 
+                onclick="window.open('https://painelhospedagem.locaweb.com.br/','_blank');">
+               <div class="div-interna text-center">                
+                   <img src="images/locaweb.png" style="width:100px"/>
+                   <span style="color:black; font-weight: bold">Painel Site</span>
+               </div>
+           </div>
+
+           <div class="col-lg-2 col-md-3 col-sm-5 col-xm-5 col-xm-6 mt-2 mr-2 div-vermelho" 
+                onclick="window.open('https://zbx.axes.com.br/','_blank');">
+               <div class="div-interna text-center">
+                   <span style=" font-weight: bold; font-size: xx-large">ZABBIX</span>
+               </div>
+           </div>
+
+           <div class="col-lg-2 col-md-3 col-sm-5 col-xm-5 col-xm-6 mt-2 mr-2 div-branco" 
+                onclick="window.open('https://webmail-seguro.com.br/intera.org.br/','_blank');">
+               <div class="div-interna text-center">                
+                   <img src="images/zentyal.jpg" style="width:100px"/>
+                   <span style="color:black; font-weight: bold">Active Directory</span>
+               </div>
+           </div>
+
+           <div class="col-lg-2 col-md-3 col-sm-5 col-xm-5 col-xm-6 mt-2 mr-2 div-branco" 
+                onclick="window.open('https://172.31.10.1/','_blank');">
+               <div class="div-interna text-center">                
+                   <img src="images/pfsense.png" style="width:140px"/>                   
+               </div>
+           </div>
+
+           <div class="col-lg-2 col-md-3 col-sm-5 col-xm-5 col-xm-6 mt-2 mr-2 div-branco" 
+                onclick="window.open('http://int-srvic:8080/tfs/Intera/_projects','_blank');">
+               <div class="div-interna text-center">                
+                   <img src="images/tfs.jpg" style="width:150px"/>                   
+               </div>
+           </div>
+
+           <div class="col-lg-2 col-md-3 col-sm-5 col-xm-5 col-xm-6 mt-2 mr-2 div-branco" 
+                onclick="window.open('http://int-spf:9090/','_blank');">
+               <div class="div-interna text-center">                
+                   <img src="images/tibcospf.png" style="width:150px"/>                   
+               </div>
+           </div>
+
+           <div class="col-lg-2 col-md-3 col-sm-5 col-xm-5 col-xm-6 mt-2 mr-2 div-branco" 
+                onclick="window.open('http://int-srvic:81/Home/Login','_blank');">
+               <div class="div-interna text-center">                
+                   <img src="images/ER.jpg" style="width:150px"/>                   
+               </div>
+           </div>
+
+            <div class="col-lg-2 col-md-3 col-sm-5 col-xm-5 col-xm-6 mt-2 mr-2 div-branco" 
+                onclick="window.open('http://172.31.10.25/lista%20de%20ramais.htm','_blank');">
+               <div class="div-interna text-center">                
+                   <img src="images/ramais.jpg" style="width:120px"/> 
+                   <span style="color:black; font-weight: bold">Ramais</span>                  
+               </div>
+           </div>
+
+        </div>
+        <div class="mt-4"></div>
+
+        <span style="color:black; font-weight: bold; font-size: x-large">Links WD</span>
+
+        
+        <div class="row">
+            
+            <div class="col-lg-2 col-md-3 col-sm-5 col-xm-5 col-xm-6 mt-2 mr-2 div-branco" 
+                onclick="window.open('https://wdc.service-now.com/ess/','_blank');">
+                <div class="div-interna text-center">                
+                    <img src="images/wd.jpg" style="width:140px"/>
+                    <span style="color:black; font-weight: bold">Chamados Tickets</span>
+                </div>
+            </div>
+
+            <div class="col-lg-2 col-md-3 col-sm-5 col-xm-5 col-xm-6 mt-2 mr-2 div-branco" 
+                onclick="window.open('https://mypass.wdc.com/PMUser/','_blank');">
+                <div class="div-interna text-center">                
+                    <img src="images/wd.jpg" style="width:140px"/>
+                    <span style="color:black; font-weight: bold">Password</span>
+                </div>
+            </div>
+
+            <div class="col-lg-2 col-md-3 col-sm-5 col-xm-5 col-xm-6 mt-2 mr-2 div-branco" 
+                onclick="window.open('https://jira.hgst.com/','_blank');">
+                <div class="div-interna text-center">                
+                    <img src="images/jira.jpg" style="width:140px"/>    
+                    <img src="images/wd.jpg" style="width:140px"/>                
+                </div>
+            </div>
+
+            <div class="col-lg-2 col-md-3 col-sm-5 col-xm-5 col-xm-6 mt-2 mr-2 div-branco" 
+                onclick="window.open('http://fwtools.hgst.com/','_blank');">
+                <div class="div-interna text-center">     
+                    <span style="color:black; font-weight: bold; font-size: x-large">FW Tools</span>           
+                    <img src="images/wd.jpg" style="width:140px"/>                    
+                </div>
+            </div>
+
+            <div class="col-lg-2 col-md-3 col-sm-5 col-xm-5 col-xm-6 mt-2 mr-2 div-branco" 
+                onclick="window.open('https://appstore.wdc.com/','_blank');">
+                <div class="div-interna text-center">                
+                    <img src="images/citrix.png" style="width:140px"/>    
+                    <img src="images/wd.jpg" style="width:140px"/>                
+                </div>
+            </div>
+
+            <div class="col-lg-2 col-md-3 col-sm-5 col-xm-5 col-xm-6 mt-2 mr-2 div-vermelho" 
+                onclick="window.open('http://gosecure.wdc.com/','_blank');">
+                <div class="div-interna text-center"> 
+                    <img src="images/vip-access.png" style="width:100px"/>  
+                    <span style="color:white; font-weight: bold; ">VIP Access</span>                   
+                </div>
+            </div>
+
+            <div class="col-lg-2 col-md-3 col-sm-5 col-xm-5 col-xm-6 mt-2 mr-2 div-branco" 
+                onclick="window.open('https://wdc.account.box.com/login','_blank');">
+                <div class="div-interna text-center">                
+                    <img src="images/box.png" style="width:100px"/>    
+                    <img src="images/wd.jpg" style="width:140px"/>                
+                </div>
+            </div>
+        </div>
+        
+
+        
+
+        <br/>
+    </div>
+
+<!-- INICIO PARTE -->
+
+<!-- area de teste de internet -->
+
+<div class="container">
+	
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          
+		  <h4 class="modal-title">Intera/AXES Link</h4>
+		  <button type="button" class="close" data-dismiss="modal">&times;</button>
+          
+        </div>
+        <div class="modal-body">
+          
+		  <h1>Avaliação do link de internet.</h1>
+		  <p> O Objetivo é avaliar o status dos servidores interno, avaliar se estamos conseguindo pingar para fora da rede interna, e se temos conexão com os ip's públicos comumente utilizados, veja abaixo um exemplo dos status:</p> 
+			<ol>
+			 <li> <p align ='left'>GATEWAY&nbsp;<span style="background-color: #47bc2d; color: #ffffff; display: inline-block; padding: 1px 10px; font-weight: bold; border-radius: 10px;">ONLINE</span>.</p> </li>
+			 <li> <p align ='left'>FIREWALL&nbsp;<span style="background-color: yellow; color: black; display: inline-block; padding: 1px 10px; font-weight: bold; border-radius: 10px;">NO INTERNET/CHECKING</span>.</p> </li>
+			 <li> <p align ='left'>HOSTVM01&nbsp;<span style="background-color: red; color: #a8a8a8; display: inline-block; padding: 1px 10px; font-weight: bold; border-radius: 10px;">OFFLINE</span>.</p> </li>
+			 </ol>
+			 Caso haja algum problema favor informar o TI.</p>
+			 
+			 <!--teste de internet em si -->
+			 <ul data-bind="foreach:servers">
+				<li> <a href="#" data-bind="text:name,attr:{href: 'http://'+name}">tester</a> <span data-bind="text:status,css:status"></span>
+
+				</li>
+			</ul>
+						
+			<script>
+				
+							function ping(ip, callback) {
+				
+					if (!this.inUse) {
+						this.status = 'unchecked';
+						this.inUse = true;
+						this.callback = callback;
+						this.ip = ip;
+						var _that = this;
+						this.img = new Image();
+						this.img.onload = function () {
+							_that.inUse = false;
+							_that.callback('responded');
+				
+						};
+						this.img.onerror = function (e) {
+							if (_that.inUse) {
+								_that.inUse = false;
+								_that.callback('responded', e);
+							}
+				
+						};
+						this.start = new Date().getTime();
+						this.img.src = "http://" + ip;
+						this.timer = setTimeout(function () {
+							if (_that.inUse) {
+								_that.inUse = false;
+								_that.callback('timeout');
+							}
+						}, 5000);
+					}
+				}
+				var PingModel = function (servers) {
+					var self = this;
+					var myServers = [];
+					ko.utils.arrayForEach(servers, function (location) {
+						myServers.push({
+							name: location,
+							status: ko.observable('unchecked')
+						});
+					});
+					self.servers = ko.observableArray(myServers);
+					ko.utils.arrayForEach(self.servers(), function (s) {
+						s.status('checking');
+						new ping(s.name, function (status, e) {
+							s.status(status);
+						});
+					});
+				};
+				var komodel = new PingModel(['americas.hgst.com',
+					'172.31.10.1',
+					'172.34.10.13',
+					'google.com.br',
+					'msn.com',
+					'astalavista.box.sk',
+					'179.191.233.233', 
+					'globo.com', 
+					'172.16.0.16'
+					]);
+					function arroz (){
+				ko.applyBindings(komodel);
+					}				
+				</script>
+			<!-- <span data-bind="text:status,css:status"></span> -->
+
+			</li>
+			</ul>
+			 			 
+			 <!--fim do teste de internet -->
+			 
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+		   <button type="button" class="btn btn-default" data-dismiss="modal" data-toggle="modal" data-target="#myModal2" onclick="reload();arroz()" >Teste</button>
+		   
+		   <script>
+				function reload() {
+					location.reload();
+				}
+			</script>
+		   
+        </div>
+      </div>
+      
+    </div>
+		
+  </div>
+  
+</div>
+
+
+<!-- fim da area de teste de internet -->
+    
+
+<!-- FIM PARTE -->
+
+
+
+</body>
+</html>
+
+
+<script src="jquery-3.3.1.js"></script>
+<script src="bootstrap-4.0.0-dist/js/bootstrap.js"></script>
+
+
+<script>
+    $(document).ready(function () {
+        $('[data-toggle="tooltip"]').tooltip();
+    });
+</script>
+
+<!-- Inicio área de copyright e ano -->
+
+<div align = 'center'>
+<p><strong><br />Melhorias em breve&nbsp;</strong><strong>&nbsp;</strong></p>
+<p><strong>Intera <script language="JavaScript" type="text/javascript">
+    now = new Date
+    theYear=now.getYear()
+    if (theYear < 1900)
+    theYear=theYear+1900
+    document.write(theYear)
+</script></strong></p>
+
+
+
+<p><strong>&nbsp;</strong></p>
+<div>
+</div>
+	</div>
+	
+<!-- Fim área de copyright e ano -->

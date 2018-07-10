@@ -1,0 +1,45 @@
+<html>
+<head>
+
+<title>Teste de ip ping JS</title>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.4.2/knockout-min.js"></script>
+ <link rel="stylesheet" type="text/css" href="lay.css">
+ <link rel="stylesheet" type="text/css" href="alertlay.css">
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/blueimp-JavaScript-Templates/3.11.0/js/tmpl.min.js"></script>
+
+ 
+ </head>
+ 
+ <script>
+function systemInfo() {
+    chrome.runtime.sendMessage("chrome extension id",
+            {type: 'systemInfo', id: 1}, null,
+            function (data) {
+                console.log(data);
+				alert ("");
+            }
+    );
+}
+
+function networkInfo() {
+    chrome.runtime.sendMessage("chrome extension id",
+            {type: 'memory', id: 1}, null,
+            function (data) {
+                console.log(data);
+            }
+    );
+}
+
+
+
+</script>
+
+
+<input type="button" value = "Test the alert" onclick="alert('Alert this pages'); systemInfo();" />
+
+</body> 
+ 
+ 
+</html>
+
+
